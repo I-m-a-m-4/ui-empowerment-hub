@@ -1,5 +1,5 @@
 
-import { Question } from './types';
+import { Question } from './type';
 
 export const questions: Question[] = [
   // SECTION 1

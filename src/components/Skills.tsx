@@ -2,9 +2,8 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowUpRight, CheckCircle2, Video, Target, Library } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Video, Target, Library, FileSpreadsheet, TrendingUp, Palette, BookOpen } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-
 import Link from 'next/link';
 
 const skillsList = [
@@ -12,10 +11,11 @@ const skillsList = [
     id: 'smm',
     name: 'Social Media Marketing',
     icon: Target,
-    shortDesc: 'Learn how businesses use platforms like Facebook, Instagram, TikTok, Google, and Snapchat to attract customers, run advertisements, increase sales, and build profitable brands through digital marketing.',
+    shortDesc: 'Learn how businesses use platforms like Facebook, Instagram, TikTok, Google, and Snapchat to attract customers, run advertisements, increase sales, and build profitable brands.',
     roadmap: ['Meta Ads', 'Google Ads', 'TikTok Ads', 'Snapchat Ads'],
     fullDesc: 'Students will be guided from beginner level to practical campaign creation using curated video resources and hands-on practice. The complete learning roadmap has already been prepared and is ready for download.',
     mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1V1_rW5rT1gQ_06sB7-eW399s3j1W-7S6'
   },
   {
     id: 'video-editing',
@@ -25,6 +25,57 @@ const skillsList = [
     roadmap: ['CapCut (Mobile)', 'CapCut (Desktop)', 'Adobe Premiere Pro', 'Adobe After Effects'],
     fullDesc: 'The learning path combines practical projects, curated tutorials, and progressive skill development. The complete training guide has already been prepared and is ready for download.',
     mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1fziIVy1WLZNLpBHg__PaRAYp5_qXFmsv'
+  },
+  {
+    id: 'excel',
+    name: 'Microsoft Excel',
+    icon: FileSpreadsheet,
+    shortDesc: 'Master spreadsheets, formulas, data analysis, visual charts, and reporting to make data-driven decisions and optimize business operations.',
+    roadmap: ['Basic Formulas', 'Data Analysis', 'Pivot Tables & Charts', 'Excel Dashboards'],
+    fullDesc: 'Go from simple rows and columns to creating custom automated dashboards. Curated learning guides and practical templates are available for download.',
+    mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1p1xmKIGfNEPVMTJo0wPAYkefvv-B__Gm'
+  },
+  {
+    id: 'trading',
+    name: 'Trading & Finance',
+    icon: TrendingUp,
+    shortDesc: 'Learn the fundamentals of financial markets, technical analysis, risk management, and trading strategies to navigate markets effectively.',
+    roadmap: ['Market Structure', 'Technical Indicators', 'Risk Management', 'Trading Strategies'],
+    fullDesc: 'Discover how financial trading works, including charting, patterns, and developing a discipline-focused trading model with resources.',
+    mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1SMDFK8d_Qgdfyk4VxGiLvlj1U0rXeuGo'
+  },
+  {
+    id: 'uiux',
+    name: 'UI/UX Design',
+    icon: Palette,
+    shortDesc: 'Explore user interface design, user experiences, wireframing, prototyping, and modern design principles using Figma.',
+    roadmap: ['UI Fundamentals', 'User Research', 'Wireframing & Prototyping', 'Figma Mastery'],
+    fullDesc: 'Learn to design beautiful, user-centered websites and mobile apps. Access shared Figma files, templates, and courses.',
+    mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1xry2OGGHYfza0yCkZgOZ2-wypD_8BqDI'
+  },
+  {
+    id: 'graphics',
+    name: 'Graphics Design',
+    icon: Palette,
+    shortDesc: 'Create stunning visuals, learn typography, branding layouts, color theory, and professional design software.',
+    roadmap: ['Design Principles', 'Photoshop & Illustrator', 'Branding & Layouts', 'Project Portfolio'],
+    fullDesc: 'Unleash your creativity by learning graphic design. This course covers everything from simple poster layouts to complete brand guidelines.',
+    mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1ojuqLafMNMSWgzEArNhpIJ9Zajz481yR'
+  },
+  {
+    id: 'books',
+    name: 'Personal Development Books',
+    icon: BookOpen,
+    shortDesc: 'Curated list of reading materials and books focused on mindset, financial growth, leadership, and success.',
+    roadmap: ['Mindset & Barakah', 'Finance & Wealth', 'Leadership Principles', 'Productivity Habits'],
+    fullDesc: 'Access a curated collection of ebooks and guides focused on personal growth, halal wealth building, and prophetic leadership principles.',
+    mentorLink: '#mentors',
+    driveLink: 'https://drive.google.com/drive/folders/1crsaLdEAfziNMIHkR2m9UjFv1UwbPG3O'
   }
 ];
 
@@ -82,8 +133,7 @@ const Skills = () => {
                 <div className="flex items-center gap-3 pt-6 border-t border-gray-100 mt-auto">
                   <Button
                     asChild
-                    variant="outline"
-                    className="flex-1 rounded-md py-4 border-[#2C3038] text-[#2C3038] hover:bg-gray-50 bg-white font-semibold text-sm"
+                    className="flex-1 rounded-md py-4 border border-[#2C3038] text-[#2C3038] hover:bg-gray-50 hover:text-[#024AD8] hover:border-[#024AD8] bg-white font-semibold text-sm flex items-center justify-center transition-colors"
                   >
                     <a href={skill.mentorLink}>Mentor</a>
                   </Button>
@@ -99,9 +149,9 @@ const Skills = () => {
           })}
 
           {/* Google Drive other skills card */}
-          <div className="p-8 rounded-lg border border-gray-200 bg-white flex flex-col justify-between group hover:border-orange-500/40 transition-colors duration-300">
+          <div className="p-8 rounded-lg border border-gray-200 bg-white flex flex-col justify-between group hover:border-[#024AD8]/40 transition-colors duration-300">
             <div>
-              <div className="p-4 w-fit rounded-lg bg-orange-500/10 text-orange-600 mb-6">
+              <div className="p-4 w-fit rounded-lg bg-[#024AD8]/10 text-[#024AD8] mb-6">
                 <Library className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-[#2C3038] mb-3">Additional Skills</h3>
@@ -158,20 +208,18 @@ const Skills = () => {
             <div className="flex gap-4 pt-4 border-t border-gray-100">
               <Button
                 asChild
-                variant="outline"
-                className="flex-1 rounded-md border-gray-300 text-[#2C3038] hover:bg-gray-50"
+                className="flex-1 rounded-md border border-gray-300 text-[#2C3038] hover:bg-gray-50 hover:text-[#024AD8] hover:border-[#024AD8] bg-white font-semibold text-sm flex items-center justify-center transition-colors"
                 onClick={() => setSelectedSkill(null)}
               >
                 <a href="#mentors">Contact Mentor</a>
               </Button>
               <Button
-                className="flex-1 rounded-md bg-[#024AD8] hover:bg-[#0036C4] text-white"
-                onClick={() => {
-                  alert("Downloadable guide will be available shortly!");
-                  setSelectedSkill(null);
-                }}
+                asChild
+                className="flex-1 rounded-md bg-[#024AD8] hover:bg-[#0036C4] text-white font-semibold text-sm flex items-center justify-center"
               >
-                Download Guide
+                <a href={selectedSkill.driveLink} target="_blank" rel="noopener noreferrer" onClick={() => setSelectedSkill(null)}>
+                  Access Drive
+                </a>
               </Button>
             </div>
           </DialogContent>

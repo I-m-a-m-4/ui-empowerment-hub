@@ -3,7 +3,7 @@
 
 import { db } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import type { SurveyAnswers } from './types';
+import type { SurveyAnswers } from './type';
 
 export async function submitSurvey(data: SurveyAnswers) {
   try {

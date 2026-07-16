@@ -14,7 +14,7 @@ import { useToast } from '@/hooks/use-toast';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from '@/components/ui/alert-dialog';
 import { Checkbox } from '@/components/ui/checkbox';
 import { cn } from '@/lib/utils';
-import type { SurveyAnswers } from '@/app/pagetopurpose/types';
+import type { SurveyAnswers } from '@/app/pagetopurpose/type';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 
 type Registration = SurveyAnswers & {

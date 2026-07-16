@@ -6,7 +6,7 @@ import { CartProvider as USCProvider } from 'use-shopping-cart';
 export function CartProvider({ children }: { children: React.ReactNode }) {
   return (
     <USCProvider
-      mode="client-only"
+      mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!}
       successUrl={`${process.env.NEXT_PUBLIC_URL}/success`}

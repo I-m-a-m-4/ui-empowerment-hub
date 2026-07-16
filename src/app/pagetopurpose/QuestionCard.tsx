@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useFormContext } from 'react-hook-form';
 import { cn } from '@/lib/utils';
-import type { Question } from './types';
+import type { Question } from './type';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -58,7 +58,7 @@ export default function QuestionCard({ question }: QuestionCardProps) {
                         defaultValue={getValues(question.name)}
                         className="space-y-3"
                     >
-                        {question.options?.map(option => {
+                        {question.options?.map((option: any) => {
                              const isSelected = getValues(question.name) === option.value;
                             return (
                             <Label 
@@ -78,7 +78,7 @@ export default function QuestionCard({ question }: QuestionCardProps) {
             case 'checkbox':
                 return (
                     <div className="space-y-3">
-                        {question.options?.map(option => {
+                        {question.options?.map((option: any) => {
                             const currentValues = getValues(question.name) || [];
                             const isSelected = currentValues.includes(option.value);
                             return (

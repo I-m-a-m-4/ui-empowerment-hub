@@ -10,7 +10,7 @@ import { ArrowLeft, ArrowRight, Check, Home, Loader2 } from 'lucide-react';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 
-import type { Question, SurveyAnswers } from './types';
+import type { Question, SurveyAnswers } from './type';
 import QuestionCard from './QuestionCard';
 import { submitSurvey } from './actions';
 import { useToast } from '@/hooks/use-toast';
