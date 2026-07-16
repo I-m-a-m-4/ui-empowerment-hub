@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowUpRight, CheckCircle2, Video, Target, Library } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
+import Link from 'next/link';
+
 const skillsList = [
   {
     id: 'smm',
@@ -111,17 +113,15 @@ const Skills = () => {
             <div className="pt-6 border-t border-gray-100 mt-auto">
               <Button
                 asChild
-                className="w-full rounded-md py-5 bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-700 hover:to-amber-600 border-none text-white font-bold"
+                className="w-full rounded-md py-5 bg-gradient-to-r from-[#024AD8] to-blue-500 hover:from-[#0036C4] hover:to-blue-600 border-none text-white font-bold"
               >
-                <a
-                  href="https://drive.google.com/drive/folders/1V1_rW5rT1gQ_06sB7-eW399s3j1W-7S6"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/skills-and-resources"
                   className="flex items-center justify-center gap-2"
                 >
-                  Access Resource Drive
+                  Access Skills and Resources
                   <ArrowUpRight className="w-4 h-4" />
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

@@ -13,8 +13,12 @@ const Footer = () => {
           {/* Brand/About */}
           <div className="col-span-1 md:col-span-4 space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 bg-white/10 text-white grid place-items-center rounded-lg group-hover:scale-105 transition-transform duration-200">
-                <GraduationCap className="w-5 h-5" />
+              <div className="w-10 h-10 relative overflow-hidden rounded-lg group-hover:scale-105 transition-transform duration-200 bg-white">
+                <img
+                  src="/the three logo.jpeg"
+                  alt="UI Students' Union Logo"
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-bold tracking-tight text-white leading-none">UI STUDENTS' UNION</span>
@@ -44,15 +48,13 @@ const Footer = () => {
             <nav className="flex flex-col gap-2.5 text-sm">
               <a href="#skills" className="text-gray-300 hover:text-white transition-colors">Social Media Marketing</a>
               <a href="#skills" className="text-gray-300 hover:text-white transition-colors">Video Editing</a>
-              <a
-                href="https://drive.google.com/drive/folders/1V1_rW5rT1gQ_06sB7-eW399s3j1W-7S6"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/skills-and-resources"
                 className="text-gray-300 hover:text-white transition-colors flex items-center gap-1"
               >
-                Mellanbites Resource Drive
+                Skills & Resources
                 <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
+              </Link>
             </nav>
           </div>
 

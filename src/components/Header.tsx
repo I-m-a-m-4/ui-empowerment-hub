@@ -41,8 +41,12 @@ const Header = () => {
       >
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-[#024AD8]/10 text-[#024AD8] grid place-items-center rounded-lg group-hover:scale-105 transition-transform duration-200">
-              <GraduationCap className="w-6 h-6" />
+            <div className="w-12 h-12 relative overflow-hidden rounded-lg group-hover:scale-105 transition-transform duration-200">
+              <img
+                src="/the three logo.jpeg"
+                alt="UI Students' Union Logo"
+                className="object-cover w-full h-full"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-bold tracking-tight text-[#2C3038] leading-none">UI STUDENTS' UNION</span>
