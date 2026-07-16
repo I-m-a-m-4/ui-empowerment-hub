@@ -42,15 +42,15 @@ const Executives = () => {
               className="p-6 rounded-lg border border-gray-200 bg-white flex flex-col justify-between items-center text-center hover:border-[#024AD8]/40 transition-colors duration-300"
             >
               <div className="flex flex-col items-center w-full">
-                <div className="w-24 h-24 rounded-full flex items-center justify-center mb-4 overflow-hidden border-2 border-gray-100 bg-[#024AD8]/10 text-[#024AD8]">
+                <div className="w-36 h-36 rounded-full flex items-center justify-center mb-4 overflow-hidden border-2 border-gray-150 bg-[#024AD8]/10 text-[#024AD8] shadow-sm">
                   {exec.image ? (
                     <img
                       src={exec.image}
                       alt={exec.name}
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
                     />
                   ) : (
-                    <User className="w-12 h-12" />
+                    <User className="w-16 h-16" />
                   )}
                 </div>
                 <h3 className="text-base font-bold text-[#2C3038] mb-1">{exec.name}</h3>

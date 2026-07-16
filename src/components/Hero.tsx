@@ -9,7 +9,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <MotionWrap>
-      <section className="relative min-h-[85vh] flex items-center justify-center py-28 border-b border-gray-200 overflow-hidden bg-zinc-950">
+      <section className="relative min-h-[95vh] flex items-center justify-center py-28 border-b border-gray-200 overflow-hidden bg-zinc-950">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -20,7 +20,7 @@ const Hero = () => {
             priority
           />
           {/* Premium dark overlay with backdrop blur for high contrast */}
-          <div className="absolute inset-0 bg-[#2C3038]/60 backdrop-blur-[1px] z-10"></div>
+          <div className="absolute inset-0 bg-[#2C3038]/50 z-10"></div>
         </div>
 
         <div className="container relative z-20 mx-auto px-6 max-w-5xl text-center">
