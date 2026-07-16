@@ -1,0 +1,311 @@
+{
+  "placeholderImages": [
+    {
+      "id": "ismail",
+      "description": "A professional headshot of Ismail Adekunle-Olaiya.",
+      "imageUrl": "https://res.cloudinary.com/dd1czj85j/image/upload/v1758632419/FB_IMG_1758620993468_zoahas.jpg",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "ismail-about",
+      "description": "A professional photo of Ismail Adekunle-Olaiya in a discussion.",
+      "imageUrl": "https://res.cloudinary.com/dd1czj85j/image/upload/v1758632419/FB_IMG_1758620993468_zoahas.jpg",
+      "imageHint": "man talking business"
+    },
+    {
+      "id": "stats-bg",
+      "description": "A modern, professional office workspace.",
+      "imageUrl": "/stats-bg.jpg",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "peritus",
+      "description": "The logo for Peritus Engineering.",
+      "imageUrl": "/Peritus-Engineering-logo.svg",
+      "imageHint": "Peritus Engineering logo"
+    },
+    {
+      "id": "pilgrim",
+      "description": "The logo for Pilgrim Prive.",
+      "imageUrl": "https://images.unsplash.com/photo-1579623828015-bd63cc261a09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxQaWxncmltJTIwUHJpdmUlMjBsb2dvfGVufDB8fHx8MTc1OTEzNzE3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Pilgrim Prive logo"
+    },
+    {
+      "id": "easyreside",
+      "description": "The logo for EasyReside LTD.",
+      "imageUrl": "https://images.unsplash.com/photo-1668193205145-8cd7235ec8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8RWFzeVJlc2lkZSUyMExURCUyMGxvZ298ZW58MHx8fHwxNzU5MTM3MTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "EasyReside LTD logo"
+    },
+    {
+      "id": "researchgains",
+      "description": "The logo for ResearchGains.",
+      "imageUrl": "https://images.unsplash.com/photo-1620860421940-11d849067893?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxSZXNlYXJjaEdhaW5zJTIwbG9nb3xlbnwwfHx8fDE3NTkxMzcxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ResearchGains logo"
+    },
+    {
+      "id": "haamz",
+      "description": "The logo for Haamz Variety Store.",
+      "imageUrl": "https://images.unsplash.com/photo-1718872901166-b18bda5dfe39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8SGFhbXolMjBWYXJpZXR5JTIwU3RvcmUlMjBsb2dvfGVufDB8fHx8MTc1OTEzNzE3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Haamz Variety Store logo"
+    },
+    {
+      "id": "sccentaura",
+      "description": "The logo for Sccentaura.",
+      "imageUrl": "https://images.unsplash.com/photo-1628760584600-6c31148991e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxTY2NlbnRhdXJhJTIwbG9nb3xlbnwwfHx8fDE3NTkxMzcxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Sccentaura logo"
+    },
+    {
+      "id": "blog1",
+      "description": "Abstract image representing hadith and business.",
+      "imageUrl": "https://images.unsplash.com/photo-1671461519096-4be7a2597766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpc2xhbWljJTIwbWFudXNjcmlwdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc1OTEzNzE3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic manuscript business"
+    },
+    {
+      "id": "blog2",
+      "description": "Image representing meaningful connections.",
+      "imageUrl": "https://images.unsplash.com/photo-1688548566509-44023d14c4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmllbmRzJTIwdGFsa2luZ3xlbnwwfHx8fDE3NTkxMzcxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends talking"
+    },
+    {
+      "id": "blog3",
+      "description": "Image representing a journey from employee to entrepreneur.",
+      "imageUrl": "https://images.unsplash.com/photo-1717960432625-34fd110a8596?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwYXRoJTIwam91cm5leXxlbnwwfHx8fDE3NTkxMzcxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "path journey"
+    },
+    {
+      "id": "process1",
+      "description": "Two muslim men in a business meeting.",
+      "imageUrl": "/strategy.webp",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "process2",
+      "description": "People collaborating on a design.",
+      "imageUrl": "/design.jpg",
+      "imageHint": "design collaboration"
+    },
+    {
+      "id": "process3",
+      "description": "A successful project launch.",
+      "imageUrl": "/A-successful-project-launch.jpg",
+      "imageHint": "project launch"
+    },
+    {
+      "id": "book-wealth",
+      "description": "Book cover for 'How the Best Generation Built Wealth'.",
+      "imageUrl": "https://images.unsplash.com/photo-1685601342582-eee16ab0a9f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aXNsYW1pYyUyMGJ1c2luZXNzJTIwYm9va3xlbnwwfHx8fDE3NTkwODUwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic business book"
+    },
+    {
+      "id": "book-mindset",
+      "description": "Book cover for 'The CEO's Mindset'.",
+      "imageUrl": "https://images.unsplash.com/photo-1740313498441-68da0e01df37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3VjY2VzcyUyMG1pbmRzZXQlMjBib29rfGVufDB8fHx8MTc1OTA4NTA4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "success mindset book"
+    },
+    {
+      "id": "book-marketing",
+      "description": "Book cover for 'Halal Marketing Mastery'.",
+      "imageUrl": "https://images.unsplash.com/photo-1612969310359-e77892cbd221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYXJrZXRpbmclMjBzdHJhdGVneSUyMGJvb2t8ZW58MHx8fHwxNzU5MDg1MDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketing strategy book"
+    },
+    {
+      "id": "book-finance",
+      "description": "Book cover for 'Barakah-Driven Finance'.",
+      "imageUrl": "https://images.unsplash.com/photo-1703493252669-5966d6361e32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpc2xhbWljJTIwZmluYW5jZSUyMGJvb2t8ZW58MHx8fHwxNzU5MDg1MDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic finance book"
+    },
+    {
+      "id": "book-hustle",
+      "description": "Book cover for 'Beyond the Hustle'.",
+      "imageUrl": "https://images.unsplash.com/photo-1715770356944-f362b4f330e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b3JrJTIwbGlmZSUyMGJhbGFuY2UlMjBib29rfGVufDB8fHx8MTc1OTA4NTA4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "work life balance book"
+    },
+    {
+      "id": "book-leadership",
+      "description": "Book cover for 'Prophetic Leadership'.",
+      "imageUrl": "https://images.unsplash.com/photo-1660854088062-c178a98550cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsZWFkZXJzaGlwJTIwYm9va3xlbnwwfHx8fDE3NTkwODUwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leadership book"
+    },
+    {
+      "id": "book-sales",
+      "description": "Book cover for 'The Art of Ethical Sales'.",
+      "imageUrl": "https://images.unsplash.com/photo-1674664985250-4d023c679b39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzYWxlcyUyMGd1aWRlJTIwYm9va3xlbnwwfHx8fDE3NTkwODUwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sales guide book"
+    },
+    {
+      "id": "book-strategy",
+      "description": "Book cover for 'The Ummahpreneur's Strategy Toolkit'.",
+      "imageUrl": "https://images.unsplash.com/photo-1676282827740-7360534b7e75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMHN0cmF0ZWd5JTIwYm9va3xlbnwwfHx8fDE3NTkwODUwODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business strategy book"
+    },
+    {
+      "id": "diary-reviews",
+      "description": "A close-up of a person writing a positive review on a laptop.",
+      "imageUrl": "/happy-clients.jpg",
+      "imageHint": "writing review"
+    },
+    {
+      "id": "diary-news",
+      "description": "A stack of newspapers with a modern, clean aesthetic.",
+      "imageUrl": "/q&a.webp",
+      "imageHint": "newspapers stacked"
+    },
+    {
+      "id": "diary-underdogs",
+      "description": "A single small plant growing through a crack in dry earth, symbolizing resilience.",
+      "imageUrl": "/A-single-small-plant-growing-through.jpg",
+      "imageHint": "plant growing"
+    },
+    {
+      "id": "diary-podcast",
+      "description": "A professional microphone in a softly lit recording studio.",
+      "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb2RjYXN0JTIwbWljcm9waG9uZXxlbnwwfHx8fDE3NTkwNzUwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "podcast microphone"
+    },
+    {
+      "id": "diary-resource-library",
+      "description": "A well-organized bookshelf in a modern library.",
+      "imageUrl": "https://images.unsplash.com/photo-1709385283507-0dca42afa409?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsaWJyYXJ5JTIwYm9va3NoZWxmfGVufDB8fHx8MTc1OTEzNzE3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "library bookshelf"
+    },
+    {
+      "id": "diary-interviews",
+      "description": "Two people engaged in a thoughtful conversation in a cafe.",
+      "imageUrl": "https://res.cloudinary.com/dd1czj85j/image/upload/v1758632419/FB_IMG_1758620993468_zoahas.jpg",
+      "imageHint": "people talking"
+    },
+    {
+      "id": "diary-gallery",
+      "description": "A wall in an art gallery with several framed pictures.",
+      "imageUrl": "/A-wall-in-an-art-gallery.jpg",
+      "imageHint": "art gallery"
+    },
+    {
+      "id": "podcast-ceos-mindset",
+      "description": "Abstract art representing thought and strategy.",
+      "imageUrl": "https://images.unsplash.com/photo-1663415833638-33e4202f3cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHJhdGVneSUyMG1pbmRzZXR8ZW58MHx8fHwxNzU5MTM3MTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "strategy mindset"
+    },
+    {
+      "id": "podcast-halal-brand",
+      "description": "Clean, modern branding materials with an Islamic touch.",
+      "imageUrl": "https://images.unsplash.com/photo-1758629277674-d9f1fa726795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBicmFuZGluZ3xlbnwwfHx8fDE3NTkxMzcxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern branding"
+    },
+    {
+      "id": "podcast-employee-to-entrepreneur",
+      "description": "A person standing at a crossroads, symbolizing a career change.",
+      "imageUrl": "https://images.unsplash.com/photo-1659353221237-6a1cfb73fd90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJlZXIlMjBjaG9pY2V8ZW58MHx8fHwxNzU5MDY2MzEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "career choice"
+    },
+    {
+      "id": "podcast-marketing-ummah",
+      "description": "A diverse group of Muslims collaborating.",
+      "imageUrl": "https://images.unsplash.com/photo-1699371828469-44fe21662152?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc1OTA4NDM4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community collaboration"
+    },
+    {
+      "id": "podcast-barakah-finance",
+      "description": "An image of glowing coins or light, symbolizing blessed wealth.",
+      "imageUrl": "https://images.unsplash.com/photo-1632961970545-6f1419ae0e46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxibGVzc2VkJTIwZmluYW5jZXxlbnwwfHx8fDE3NTkxMzcxNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blessed finance"
+    },
+    {
+      "id": "podcast-scaling-sabr",
+      "description": "A slow-growing, strong tree like a bonsai or oak.",
+      "imageUrl": "https://images.unsplash.com/photo-1582579107023-c5b2c76cda09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3Ryb25nJTIwdHJlZXxlbnwwfHx8fDE3NTkxMzcxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "strong tree"
+    },
+    {
+      "id": "podcast-prophetic-leadership",
+      "description": "An old, wise-looking book or scroll.",
+      "imageUrl": "https://images.unsplash.com/photo-1569586858882-910aaf6e80ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbmNpZW50JTIwYm9va3xlbnwwfHx8fDE3NTkwODc5MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient book"
+    },
+    {
+      "id": "podcast-ethical-negotiation",
+      "description": "Two hands shaking in a fair and respectful agreement.",
+      "imageUrl": "https://images.unsplash.com/photo-1752159400890-d906038f1b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGFuZHNoYWtlJTIwYWdyZWVtZW50fGVufDB8fHx8MTc1OTA5NzU2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handshake agreement"
+    },
+    {
+      "id": "about-banner",
+      "description": "An abstract, professional background image for a banner.",
+      "imageUrl": "/about-heroo.jpg",
+      "imageHint": "abstract professional"
+    },
+    {
+      "id": "fact-color",
+      "description": "An abstract image with white tones.",
+      "imageUrl": "/An-abstract-image-with-white-tones.jpg",
+      "imageHint": "white abstract"
+    },
+    {
+      "id": "fact-hadith",
+      "description": "An old Islamic manuscript.",
+      "imageUrl": "/An-old-Islamic-manuscript.jpg",
+      "imageHint": "islamic manuscript"
+    },
+    {
+      "id": "fact-friends",
+      "description": "A close group of friends talking.",
+      "imageUrl": "/A-close-group-of-friends-talking.jpg",
+      "imageHint": "close friends"
+    },
+    {
+      "id": "fact-brain",
+      "description": "An abstract representation of a brain's neural network.",
+      "imageUrl": "/brain.webp",
+      "imageHint": "neural network"
+    },
+    {
+      "id": "fact-salafiy",
+      "description": "A person walking on a clear path.",
+      "imageUrl": "/A-person-walking-on-a-clear-path.jpg",
+      "imageHint": "clear path"
+    },
+    {
+      "id": "fact-boss",
+      "description": "A person at a desk looking at a complex problem.",
+      "imageUrl": "/A-person-at-a-desk-looking-at-a-complex-problem.jpg",
+      "imageHint": "complex problem"
+    },
+    {
+      "id": "gallery-banner",
+      "description": "An abstract artistic banner for the gallery page.",
+      "imageUrl": "/An-abstract-artistic-banner-for-the-gallery-page.jpg",
+      "imageHint": "abstract art"
+    },
+    {
+      "id": "interviews-banner",
+      "description": "A banner image showing a professional interview setup.",
+      "imageUrl": "/interview-setup-arab-muslim.jpg",
+      "imageHint": "interview setup"
+    },
+    {
+      "id": "news-banner",
+      "description": "A banner with a modern news or media theme.",
+      "imageUrl": "https://images.unsplash.com/photo-1497015289639-54688650d173?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmV3cyUyMG1lZGlhfGVufDB8fHx8MTc1OTE1NTc4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "news media"
+    },
+    {
+      "id": "resource-library-banner",
+      "description": "A banner showing a digital library or collection of resources.",
+      "imageUrl": "https://images.unsplash.com/photo-1537202108838-e7072bad1927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbGlicmFyeXxlbnwwfHx8fDE3NTkxMjA2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital library"
+    },
+
+    {
+      "id": "diary-banner",
+      "description": "A professional photo of Ismail Adekunle-Olaiya for the diary banner.",
+      "imageUrl": "https://res.cloudinary.com/dd1czj85j/image/upload/v1758632419/FB_IMG_1758620993468_zoahas.jpg",
+      "imageHint": "man writing"
+    },
+    {
+      "id": "reviews-banner",
+      "description": "A banner representing customer reviews, perhaps with star ratings or quote icons.",
+      "imageUrl": "/happy-clients.jpg",
+      "imageHint": "customer reviews"
+    }
+  ]
+}
