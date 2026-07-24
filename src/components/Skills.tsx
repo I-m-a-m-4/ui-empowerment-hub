@@ -160,7 +160,7 @@ const Skills = () => {
               </p>
             </div>
 
-            <div className="pt-6 border-t border-gray-100 mt-auto">
+            <div className="pt-6 border-t border-gray-100 mt-auto space-y-3">
               <Button
                 asChild
                 className="w-full rounded-md py-5 bg-gradient-to-r from-[#024AD8] to-blue-500 hover:from-[#0036C4] hover:to-blue-600 border-none text-white font-bold"
@@ -172,6 +172,21 @@ const Skills = () => {
                   Access Skills and Resources
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-full rounded-md py-5 border-gray-300 hover:bg-gray-50 text-gray-700 font-bold bg-transparent"
+              >
+                <a
+                  href="https://drive.google.com/drive/folders/1L2mgOcnvYqrpX36i9TFFE9ofKsoMgcZv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  Open Direct Google Drive
+                  <ArrowUpRight className="w-4 h-4" />
+                </a>
               </Button>
             </div>
           </div>

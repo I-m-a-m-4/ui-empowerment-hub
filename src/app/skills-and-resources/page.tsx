@@ -88,9 +88,21 @@ export default function SkillsAndResources() {
               <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#2C3038] mb-4">
                 Skills & Learning <span className="text-[#024AD8]">Resources</span>
               </h1>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
                 Unlock lifetime access to our curated Google Drive folders. Each resource path has been hand-selected and organized to accelerate your learning and career development.
               </p>
+              <div className="flex flex-wrap gap-4 mb-8">
+                <a
+                  href="https://drive.google.com/drive/folders/1L2mgOcnvYqrpX36i9TFFE9ofKsoMgcZv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 py-3.5 px-6 rounded-xl bg-[#024AD8] hover:bg-[#0036C4] text-white font-bold text-sm shadow-md transition-all transform hover:-translate-y-0.5"
+                >
+                  <Library className="w-4 h-4" />
+                  Access Full Skills Acquisition Drive
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
 
