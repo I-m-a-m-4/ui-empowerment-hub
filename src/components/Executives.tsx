@@ -10,7 +10,7 @@ const executivesList = [
   { name: 'President', role: 'President', link: 'https://wa.link/kipinc', image: '/president picture.jpeg' },
   { name: 'Vice President', role: 'Vice President', link: 'https://wa.link/jfklme', image: '/vice president.jpeg' },
   { name: 'General Secretary', role: 'General Secretary', link: 'https://wa.link/vyr58v', image: '/general secretary.jpeg' },
-  { name: 'Assistant General Secretary', role: 'Assistant General Secretary', link: 'https://wa.link/l5tqix' },
+  { name: 'Assistant General Secretary', role: 'Assistant General Secretary', link: 'https://wa.link/l5tqix', image: '/assistant general secretary.jpeg' },
   { name: 'Treasurer', role: 'Treasurer', link: 'https://wa.link/yqbu0h', image: '/treasurer pic.jpeg' },
   { name: 'Public Relations Officer', role: 'Public Relations Officer', link: 'https://wa.link/bypmfu', image: '/pro picture.jpeg' },
   { name: 'House Secretary', role: 'House Secretary', link: 'https://wa.link/y36l4u', image: '/House secretary pic.jpeg' },
@@ -89,9 +89,9 @@ const Executives = () => {
       {/* Lightbox / Modal for Executive Photos */}
       {selectedExec && (
         <Dialog open={!!selectedExec} onOpenChange={(open) => !open && setSelectedExec(null)}>
-          <DialogContent className="sm:max-w-[480px] rounded-lg border border-gray-200 bg-white p-6 overflow-hidden flex flex-col items-center">
+          <DialogContent className="sm:max-w-[480px] rounded-lg border border-neutral-800 bg-[#151516] p-6 overflow-hidden flex flex-col items-center text-white">
             <DialogHeader className="w-full text-center mb-4">
-              <DialogTitle className="text-xl font-bold text-[#2C3038]">
+              <DialogTitle className="text-xl font-bold text-white">
                 {selectedExec.name}
               </DialogTitle>
               <DialogDescription className="text-xs font-semibold text-[#024AD8] uppercase tracking-wider">
@@ -99,7 +99,7 @@ const Executives = () => {
               </DialogDescription>
             </DialogHeader>
 
-            <div className="relative w-full aspect-square max-h-[380px] rounded-lg overflow-hidden border border-gray-100 mb-6">
+            <div className="relative w-full aspect-square max-h-[380px] rounded-lg overflow-hidden border border-neutral-800 mb-6">
               {selectedExec.image && (
                 <img
                   src={selectedExec.image}

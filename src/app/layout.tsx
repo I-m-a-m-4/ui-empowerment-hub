@@ -3,6 +3,7 @@ import './globals.css';
 import { Providers } from '@/components/Providers';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ui-empowerment-hub.vercel.app'),
   title: "UI Students' Union Empowerment Hub",
   description: "The University of Ibadan Students' Union Empowerment Hub is a digital platform created by the Diligent Team to provide students with easy access to practical skill acquisition opportunities.",
   keywords: ["Empowerment Hub", "UI SU", "University of Ibadan", "Skill acquisition", "Diligent Team", "Video Editing", "Social Media Marketing"],

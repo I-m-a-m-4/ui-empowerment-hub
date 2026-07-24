@@ -181,34 +181,34 @@ const Skills = () => {
       {/* Learn More Modal */}
       {selectedSkill && (
         <Dialog open={!!selectedSkill} onOpenChange={(open) => !open && setSelectedSkill(null)}>
-          <DialogContent className="sm:max-w-[480px] rounded-lg border border-gray-200 bg-white p-6">
+          <DialogContent className="sm:max-w-[480px] rounded-lg border border-neutral-800 bg-[#151516] p-6 text-white">
             <DialogHeader>
-              <DialogTitle className="text-xl font-bold text-[#2C3038] mb-2">
+              <DialogTitle className="text-xl font-bold text-white mb-2">
                 {selectedSkill.name} Roadmap
               </DialogTitle>
-              <DialogDescription className="text-[#5A5A5A] text-sm leading-relaxed">
+              <DialogDescription className="text-neutral-400 text-sm leading-relaxed">
                 {selectedSkill.fullDesc}
               </DialogDescription>
             </DialogHeader>
 
             <div className="my-6 space-y-4">
-              <h4 className="text-xs font-bold text-[#2C3038] uppercase tracking-wider">Learning Journey Path:</h4>
+              <h4 className="text-xs font-bold text-neutral-300 uppercase tracking-wider">Learning Journey Path:</h4>
               <div className="space-y-2">
                 {selectedSkill.roadmap.map((step, index) => (
-                  <div key={index} className="flex items-center gap-4 p-3 bg-gray-50 rounded-md border border-gray-100">
+                  <div key={index} className="flex items-center gap-4 p-3 bg-neutral-900/50 rounded-md border border-neutral-800/60">
                     <div className="w-7 h-7 rounded bg-[#024AD8]/10 text-[#024AD8] flex items-center justify-center text-xs font-bold">
                       {index + 1}
                     </div>
-                    <span className="text-sm font-semibold text-[#2C3038]">{step}</span>
+                    <span className="text-sm font-semibold text-neutral-200">{step}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="flex gap-4 pt-4 border-t border-gray-100">
+            <div className="flex gap-4 pt-4 border-t border-neutral-800">
               <Button
                 asChild
-                className="flex-1 rounded-md border border-gray-300 text-[#2C3038] hover:bg-gray-50 hover:text-[#024AD8] hover:border-[#024AD8] bg-white font-semibold text-sm flex items-center justify-center transition-colors"
+                className="flex-1 rounded-md border border-neutral-700 text-neutral-300 hover:bg-neutral-850 hover:text-white bg-transparent font-semibold text-sm flex items-center justify-center transition-colors"
                 onClick={() => setSelectedSkill(null)}
               >
                 <a href="#mentors">Contact Mentor</a>
