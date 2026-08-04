@@ -65,17 +65,6 @@ const resources = [
     fullDesc: 'Unleash your creativity by learning graphic design. This course covers everything from simple poster layouts to complete brand guidelines.',
     mentorLink: '/#mentors',
   },
-  {
-    title: 'Personal Development Books',
-    description: 'Curated list of reading materials and books for mindset, growth, leadership, and success.',
-    link: 'https://drive.google.com/drive/folders/1crsaLdEAfziNMIHkR2m9UjFv1UwbPG3O',
-    image: '/images/books_cover.png',
-    icon: Library,
-    color: 'from-cyan-500 to-teal-600',
-    roadmap: ['Mindset & Barakah', 'Finance & Wealth', 'Leadership Principles', 'Productivity Habits'],
-    fullDesc: 'Access a curated collection of ebooks and guides focused on personal growth, halal wealth building, and prophetic leadership principles.',
-    mentorLink: '/#mentors',
-  },
 ];
 
 export default function SkillsAndResources() {
