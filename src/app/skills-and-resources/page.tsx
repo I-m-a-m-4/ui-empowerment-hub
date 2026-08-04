@@ -1,11 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, BookOpen, ExternalLink, FileSpreadsheet, LineChart, Palette, Video, Library } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 const resources = [
   {
@@ -15,6 +17,9 @@ const resources = [
     image: '/images/excel_cover.png',
     icon: FileSpreadsheet,
     color: 'from-emerald-500 to-green-600',
+    roadmap: ['Basic Formulas', 'Data Analysis', 'Pivot Tables & Charts', 'Excel Dashboards'],
+    fullDesc: 'Go from simple rows and columns to creating custom automated dashboards. Curated learning guides and practical templates are available for download.',
+    mentorLink: '/#mentors',
   },
   {
     title: 'Trading & Finance',
@@ -23,6 +28,9 @@ const resources = [
     image: '/images/trading_cover.png',
     icon: LineChart,
     color: 'from-blue-500 to-indigo-600',
+    roadmap: ['Market Structure', 'Technical Indicators', 'Risk Management', 'Trading Strategies'],
+    fullDesc: 'Discover how financial trading works, including charting, patterns, and developing a discipline-focused trading model with resources.',
+    mentorLink: '/#mentors',
   },
   {
     title: 'UI/UX Design',
@@ -31,6 +39,9 @@ const resources = [
     image: '/images/uiux_cover.png',
     icon: Palette,
     color: 'from-pink-500 to-rose-600',
+    roadmap: ['UI Fundamentals', 'User Research', 'Wireframing & Prototyping', 'Figma Mastery'],
+    fullDesc: 'Learn to design beautiful, user-centered websites and mobile apps. Access shared Figma files, templates, and courses.',
+    mentorLink: '/#mentors',
   },
   {
     title: 'Video Editing',
@@ -39,6 +50,9 @@ const resources = [
     image: '/images/video_cover.png',
     icon: Video,
     color: 'from-purple-500 to-violet-600',
+    roadmap: ['CapCut (Mobile)', 'CapCut (Desktop)', 'Adobe Premiere Pro', 'Adobe After Effects'],
+    fullDesc: 'The learning path combines practical projects, curated tutorials, and progressive skill development. The complete training guide has already been prepared and is ready for download.',
+    mentorLink: '/#mentors',
   },
   {
     title: 'Graphics Design',
@@ -47,6 +61,9 @@ const resources = [
     image: '/images/graphics_cover.png',
     icon: Palette,
     color: 'from-amber-500 to-orange-600',
+    roadmap: ['Design Principles', 'Photoshop & Illustrator', 'Branding & Layouts', 'Project Portfolio'],
+    fullDesc: 'Unleash your creativity by learning graphic design. This course covers everything from simple poster layouts to complete brand guidelines.',
+    mentorLink: '/#mentors',
   },
   {
     title: 'Personal Development Books',
@@ -55,10 +72,15 @@ const resources = [
     image: '/images/books_cover.png',
     icon: Library,
     color: 'from-cyan-500 to-teal-600',
+    roadmap: ['Mindset & Barakah', 'Finance & Wealth', 'Leadership Principles', 'Productivity Habits'],
+    fullDesc: 'Access a curated collection of ebooks and guides focused on personal growth, halal wealth building, and prophetic leadership principles.',
+    mentorLink: '/#mentors',
   },
 ];
 
 export default function SkillsAndResources() {
+  const [selectedResource, setSelectedResource] = useState<typeof resources[0] | null>(null);
+
   return (
     <div className="flex flex-col min-h-screen bg-[#F9FAFB] text-gray-900">
       <Header />
@@ -143,15 +165,13 @@ export default function SkillsAndResources() {
                       </p>
                     </div>
 
-                    <a
-                      href={resource.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      onClick={() => setSelectedResource(resource)}
                       className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-gray-50 border border-gray-200 text-gray-700 font-semibold text-sm hover:bg-[#024AD8] hover:text-white hover:border-[#024AD8] transition-all duration-200 shadow-sm"
                     >
                       Access Drive Folder
                       <ExternalLink className="w-4 h-4" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               );
@@ -159,6 +179,54 @@ export default function SkillsAndResources() {
           </div>
         </div>
       </main>
+
+      {/* Roadmap Modal */}
+      {selectedResource && (
+        <Dialog open={!!selectedResource} onOpenChange={(open) => !open && setSelectedResource(null)}>
+          <DialogContent className="sm:max-w-[480px] rounded-lg border border-neutral-800 bg-[#151516] p-6 text-white">
+            <DialogHeader>
+              <DialogTitle className="text-xl font-bold text-white mb-2">
+                {selectedResource.title} Roadmap
+              </DialogTitle>
+              <DialogDescription className="text-neutral-400 text-sm leading-relaxed">
+                {selectedResource.fullDesc}
+              </DialogDescription>
+            </DialogHeader>
+
+            <div className="my-6 space-y-4">
+              <h4 className="text-xs font-bold text-neutral-300 uppercase tracking-wider">Learning Journey Path:</h4>
+              <div className="space-y-2">
+                {selectedResource.roadmap.map((step, index) => (
+                  <div key={index} className="flex items-center gap-4 p-3 bg-neutral-900/50 rounded-md border border-neutral-800/60">
+                    <div className="w-7 h-7 rounded bg-[#024AD8]/10 text-[#024AD8] flex items-center justify-center text-xs font-bold">
+                      {index + 1}
+                    </div>
+                    <span className="text-sm font-semibold text-neutral-200">{step}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex gap-4 pt-4 border-t border-neutral-800">
+              <Button
+                asChild
+                className="flex-1 rounded-md border border-neutral-700 text-neutral-300 hover:bg-neutral-800 hover:text-white bg-transparent font-semibold text-sm flex items-center justify-center transition-colors"
+                onClick={() => setSelectedResource(null)}
+              >
+                <Link href={selectedResource.mentorLink}>Contact Mentor</Link>
+              </Button>
+              <Button
+                asChild
+                className="flex-1 rounded-md bg-[#024AD8] hover:bg-[#0036C4] text-white font-semibold text-sm flex items-center justify-center"
+              >
+                <a href={selectedResource.link} target="_blank" rel="noopener noreferrer" onClick={() => setSelectedResource(null)}>
+                  Access Drive
+                </a>
+              </Button>
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
 
       <Footer />
     </div>
